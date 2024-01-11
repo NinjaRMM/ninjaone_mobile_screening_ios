@@ -1,0 +1,857 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30BCB92628D0A4470053A7B8 /* CategoryItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BCB92528D0A4470053A7B8 /* CategoryItemsViewController.swift */; };
+		30BCB92A28D0FB940053A7B8 /* DetailItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BCB92928D0FB940053A7B8 /* DetailItemViewController.swift */; };
+		30BCB92C28D107C60053A7B8 /* ItemDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BCB92B28D107C60053A7B8 /* ItemDetailCell.swift */; };
+		30CF1F2228CFD96A0071842F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CF1F2128CFD96A0071842F /* AppDelegate.swift */; };
+		30CF1F2628CFD96A0071842F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CF1F2528CFD96A0071842F /* HomeViewController.swift */; };
+		30CF1F2B28CFD96C0071842F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30CF1F2A28CFD96C0071842F /* Assets.xcassets */; };
+		30CF1F2E28CFD96C0071842F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30CF1F2C28CFD96C0071842F /* LaunchScreen.storyboard */; };
+		30CF1F3928CFD96C0071842F /* NinjaOneProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CF1F3828CFD96C0071842F /* NinjaOneProjectTests.swift */; };
+		30CF1F5B28CFDB130071842F /* AppMainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CF1F5A28CFDB130071842F /* AppMainCoordinator.swift */; };
+		30CF1F5D28CFDB1C0071842F /* AppConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CF1F5C28CFDB1C0071842F /* AppConfigurations.swift */; };
+		30CF1F5F28CFDB420071842F /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CF1F5E28CFDB420071842F /* UIViewController+Extensions.swift */; };
+		30CF1F6128CFDB510071842F /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CF1F6028CFDB510071842F /* String+Extensions.swift */; };
+		30CF1F6328CFDB6E0071842F /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CF1F6228CFDB6E0071842F /* Localizable.swift */; };
+		30CF1F6528CFDB8D0071842F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30CF1F6428CFDB8D0071842F /* Localizable.strings */; };
+		30CF1F6E28CFDC040071842F /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CF1F6D28CFDC040071842F /* HomeCoordinator.swift */; };
+		30CF1F7028CFDC2A0071842F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CF1F6F28CFDC2A0071842F /* HomeViewModel.swift */; };
+		30CF1F7528CFDC5C0071842F /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CF1F7428CFDC5C0071842F /* Bindable.swift */; };
+		30CF1F7728CFDC6C0071842F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CF1F7628CFDC6C0071842F /* Coordinator.swift */; };
+		30CF1F7928CFDC7D0071842F /* NetworkRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CF1F7828CFDC7D0071842F /* NetworkRepository.swift */; };
+		30CF1F7C28CFDD410071842F /* NinjaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CF1F7B28CFDD410071842F /* NinjaModel.swift */; };
+		30CF1F7E28CFDE550071842F /* NInjaEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CF1F7D28CFDE550071842F /* NInjaEndPoint.swift */; };
+		30CF1F8028CFDE8D0071842F /* NinjaRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CF1F7F28CFDE8D0071842F /* NinjaRepository.swift */; };
+		30CF1F8228CFE4580071842F /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CF1F8128CFE4570071842F /* FeedViewController.swift */; };
+		30CF1F8428CFE5130071842F /* UIVIew+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CF1F8328CFE5130071842F /* UIVIew+Extensions.swift */; };
+		30CF1F8728CFF1A70071842F /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CF1F8628CFF1A70071842F /* CategoryCell.swift */; };
+		30CFC23D28D26CB800E420A0 /* NinjaRepositoryMockSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CFC23C28D26CB800E420A0 /* NinjaRepositoryMockSuccess.swift */; };
+		30CFC23F28D26CC200E420A0 /* NinjaRepositoryMockFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CFC23E28D26CC200E420A0 /* NinjaRepositoryMockFailure.swift */; };
+		30CFC24128D26CD400E420A0 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CFC24028D26CD400E420A0 /* HomeViewModelTests.swift */; };
+		30CFC24328D294E300E420A0 /* CreaturesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CFC24228D294E300E420A0 /* CreaturesListViewController.swift */; };
+		6D2FB8F935B7712D234A8E87 /* Pods_NinjaOneProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D4E3C6B0C17F8056188EAE3 /* Pods_NinjaOneProject.framework */; };
+		A48A22812B502A6F00980216 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A48A22802B502A6F00980216 /* README.md */; };
+		B2A0E2D420DC287D2F89E681 /* Pods_NinjaOneProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD7877829B4DA2C4D42388DF /* Pods_NinjaOneProjectTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		30CF1F3528CFD96C0071842F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30CF1F1628CFD96A0071842F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30CF1F1D28CFD96A0071842F;
+			remoteInfo = NinjaOneProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		30BCB92528D0A4470053A7B8 /* CategoryItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemsViewController.swift; sourceTree = "<group>"; };
+		30BCB92928D0FB940053A7B8 /* DetailItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailItemViewController.swift; sourceTree = "<group>"; };
+		30BCB92B28D107C60053A7B8 /* ItemDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailCell.swift; sourceTree = "<group>"; };
+		30CF1F1E28CFD96A0071842F /* NinjaOneProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NinjaOneProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		30CF1F2128CFD96A0071842F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		30CF1F2528CFD96A0071842F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		30CF1F2A28CFD96C0071842F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		30CF1F2D28CFD96C0071842F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		30CF1F2F28CFD96C0071842F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30CF1F3428CFD96C0071842F /* NinjaOneProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NinjaOneProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		30CF1F3828CFD96C0071842F /* NinjaOneProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NinjaOneProjectTests.swift; sourceTree = "<group>"; };
+		30CF1F5A28CFDB130071842F /* AppMainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMainCoordinator.swift; sourceTree = "<group>"; };
+		30CF1F5C28CFDB1C0071842F /* AppConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigurations.swift; sourceTree = "<group>"; };
+		30CF1F5E28CFDB420071842F /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		30CF1F6028CFDB510071842F /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		30CF1F6228CFDB6E0071842F /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		30CF1F6428CFDB8D0071842F /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		30CF1F6D28CFDC040071842F /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		30CF1F6F28CFDC2A0071842F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		30CF1F7428CFDC5C0071842F /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
+		30CF1F7628CFDC6C0071842F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		30CF1F7828CFDC7D0071842F /* NetworkRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRepository.swift; sourceTree = "<group>"; };
+		30CF1F7B28CFDD410071842F /* NinjaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NinjaModel.swift; sourceTree = "<group>"; };
+		30CF1F7D28CFDE550071842F /* NInjaEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NInjaEndPoint.swift; sourceTree = "<group>"; };
+		30CF1F7F28CFDE8D0071842F /* NinjaRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NinjaRepository.swift; sourceTree = "<group>"; };
+		30CF1F8128CFE4570071842F /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		30CF1F8328CFE5130071842F /* UIVIew+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIew+Extensions.swift"; sourceTree = "<group>"; };
+		30CF1F8628CFF1A70071842F /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		30CFC23C28D26CB800E420A0 /* NinjaRepositoryMockSuccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NinjaRepositoryMockSuccess.swift; sourceTree = "<group>"; };
+		30CFC23E28D26CC200E420A0 /* NinjaRepositoryMockFailure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NinjaRepositoryMockFailure.swift; sourceTree = "<group>"; };
+		30CFC24028D26CD400E420A0 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		30CFC24228D294E300E420A0 /* CreaturesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreaturesListViewController.swift; sourceTree = "<group>"; };
+		94E8B3BA5AD825CC878B3AE4 /* Pods-NinjaOneProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NinjaOneProject.release.xcconfig"; path = "Target Support Files/Pods-NinjaOneProject/Pods-NinjaOneProject.release.xcconfig"; sourceTree = "<group>"; };
+		9D4E3C6B0C17F8056188EAE3 /* Pods_NinjaOneProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NinjaOneProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A48A22802B502A6F00980216 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B9B3A541E0191C99FA00FE55 /* Pods-NinjaOneProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NinjaOneProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-NinjaOneProjectTests/Pods-NinjaOneProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DD7877829B4DA2C4D42388DF /* Pods_NinjaOneProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NinjaOneProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E941CC19144D4A949C38460E /* Pods-NinjaOneProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NinjaOneProject.debug.xcconfig"; path = "Target Support Files/Pods-NinjaOneProject/Pods-NinjaOneProject.debug.xcconfig"; sourceTree = "<group>"; };
+		EC83825F6F509FA3D4E52BEF /* Pods-NinjaOneProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NinjaOneProjectTests.release.xcconfig"; path = "Target Support Files/Pods-NinjaOneProjectTests/Pods-NinjaOneProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30CF1F1B28CFD96A0071842F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D2FB8F935B7712D234A8E87 /* Pods_NinjaOneProject.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30CF1F3128CFD96C0071842F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2A0E2D420DC287D2F89E681 /* Pods_NinjaOneProjectTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09D4AAE42EDDA4BC1CF74E50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D4E3C6B0C17F8056188EAE3 /* Pods_NinjaOneProject.framework */,
+				DD7877829B4DA2C4D42388DF /* Pods_NinjaOneProjectTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		30CF1F1528CFD96A0071842F = {
+			isa = PBXGroup;
+			children = (
+				A48A22802B502A6F00980216 /* README.md */,
+				30CF1F2028CFD96A0071842F /* NinjaOneProject */,
+				30CF1F3728CFD96C0071842F /* NinjaOneProjectTests */,
+				30CF1F1F28CFD96A0071842F /* Products */,
+				A82E3101739FF372617DE708 /* Pods */,
+				09D4AAE42EDDA4BC1CF74E50 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		30CF1F1F28CFD96A0071842F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30CF1F1E28CFD96A0071842F /* NinjaOneProject.app */,
+				30CF1F3428CFD96C0071842F /* NinjaOneProjectTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30CF1F2028CFD96A0071842F /* NinjaOneProject */ = {
+			isa = PBXGroup;
+			children = (
+				30CF1F5728CFD9A60071842F /* Base.Iproj */,
+				30CF1F5628CFD9A40071842F /* Resources */,
+				30CF1F5428CFD9A10071842F /* Home */,
+				30CF1F5328CFD99C0071842F /* Fundamentals */,
+			);
+			path = NinjaOneProject;
+			sourceTree = "<group>";
+		};
+		30CF1F3728CFD96C0071842F /* NinjaOneProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				30CFC23B28D26C7D00E420A0 /* ViewModel */,
+				30CFC23A28D26C7B00E420A0 /* View */,
+				30CFC23928D26C7900E420A0 /* Mock */,
+			);
+			path = NinjaOneProjectTests;
+			sourceTree = "<group>";
+		};
+		30CF1F5328CFD99C0071842F /* Fundamentals */ = {
+			isa = PBXGroup;
+			children = (
+				30CF1F7328CFDC4A0071842F /* Coordinators */,
+				30CF1F7228CFDC480071842F /* Network */,
+				30CF1F7128CFDC420071842F /* Binding */,
+			);
+			path = Fundamentals;
+			sourceTree = "<group>";
+		};
+		30CF1F5428CFD9A10071842F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				30CF1F7A28CFDD310071842F /* Model */,
+				30CF1F6B28CFDBC00071842F /* Coordinator */,
+				30CF1F6A28CFDBBF0071842F /* View */,
+				30CF1F6928CFDBBC0071842F /* ViewModel */,
+				30CF1F6828CFDBBB0071842F /* Repository */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		30CF1F5528CFD9A30071842F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				30CF1F5E28CFDB420071842F /* UIViewController+Extensions.swift */,
+				30CF1F6028CFDB510071842F /* String+Extensions.swift */,
+				30CF1F8328CFE5130071842F /* UIVIew+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		30CF1F5628CFD9A40071842F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				30CF1F5928CFD9D20071842F /* Application */,
+				30CF1F5528CFD9A30071842F /* Extensions */,
+				30CF1F5828CFD9D00071842F /* Localizable */,
+				30CF1F2A28CFD96C0071842F /* Assets.xcassets */,
+				30CF1F2F28CFD96C0071842F /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		30CF1F5728CFD9A60071842F /* Base.Iproj */ = {
+			isa = PBXGroup;
+			children = (
+				30CF1F2C28CFD96C0071842F /* LaunchScreen.storyboard */,
+			);
+			path = Base.Iproj;
+			sourceTree = "<group>";
+		};
+		30CF1F5828CFD9D00071842F /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				30CF1F6228CFDB6E0071842F /* Localizable.swift */,
+				30CF1F6428CFDB8D0071842F /* Localizable.strings */,
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
+		30CF1F5928CFD9D20071842F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				30CF1F2128CFD96A0071842F /* AppDelegate.swift */,
+				30CF1F5A28CFDB130071842F /* AppMainCoordinator.swift */,
+				30CF1F5C28CFDB1C0071842F /* AppConfigurations.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		30CF1F6828CFDBBB0071842F /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				30CF1F6C28CFDBCE0071842F /* EndPoint */,
+				30CF1F7F28CFDE8D0071842F /* NinjaRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		30CF1F6928CFDBBC0071842F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				30CF1F6F28CFDC2A0071842F /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		30CF1F6A28CFDBBF0071842F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				30CF1F8528CFF1A00071842F /* Cell */,
+				30CF1F2528CFD96A0071842F /* HomeViewController.swift */,
+				30CF1F8128CFE4570071842F /* FeedViewController.swift */,
+				30BCB92528D0A4470053A7B8 /* CategoryItemsViewController.swift */,
+				30BCB92928D0FB940053A7B8 /* DetailItemViewController.swift */,
+				30CFC24228D294E300E420A0 /* CreaturesListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		30CF1F6B28CFDBC00071842F /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				30CF1F6D28CFDC040071842F /* HomeCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		30CF1F6C28CFDBCE0071842F /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				30CF1F7D28CFDE550071842F /* NInjaEndPoint.swift */,
+			);
+			path = EndPoint;
+			sourceTree = "<group>";
+		};
+		30CF1F7128CFDC420071842F /* Binding */ = {
+			isa = PBXGroup;
+			children = (
+				30CF1F7428CFDC5C0071842F /* Bindable.swift */,
+			);
+			path = Binding;
+			sourceTree = "<group>";
+		};
+		30CF1F7228CFDC480071842F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				30CF1F7828CFDC7D0071842F /* NetworkRepository.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		30CF1F7328CFDC4A0071842F /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				30CF1F7628CFDC6C0071842F /* Coordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		30CF1F7A28CFDD310071842F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				30CF1F7B28CFDD410071842F /* NinjaModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		30CF1F8528CFF1A00071842F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				30CF1F8628CFF1A70071842F /* CategoryCell.swift */,
+				30BCB92B28D107C60053A7B8 /* ItemDetailCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		30CFC23928D26C7900E420A0 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				30CFC23C28D26CB800E420A0 /* NinjaRepositoryMockSuccess.swift */,
+				30CFC23E28D26CC200E420A0 /* NinjaRepositoryMockFailure.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		30CFC23A28D26C7B00E420A0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				30CF1F3828CFD96C0071842F /* NinjaOneProjectTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		30CFC23B28D26C7D00E420A0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				30CFC24028D26CD400E420A0 /* HomeViewModelTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A82E3101739FF372617DE708 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E941CC19144D4A949C38460E /* Pods-NinjaOneProject.debug.xcconfig */,
+				94E8B3BA5AD825CC878B3AE4 /* Pods-NinjaOneProject.release.xcconfig */,
+				B9B3A541E0191C99FA00FE55 /* Pods-NinjaOneProjectTests.debug.xcconfig */,
+				EC83825F6F509FA3D4E52BEF /* Pods-NinjaOneProjectTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		30CF1F1D28CFD96A0071842F /* NinjaOneProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30CF1F4828CFD96C0071842F /* Build configuration list for PBXNativeTarget "NinjaOneProject" */;
+			buildPhases = (
+				AD6856B4E27A5994187ECD75 /* [CP] Check Pods Manifest.lock */,
+				30CF1F1A28CFD96A0071842F /* Sources */,
+				30CF1F1B28CFD96A0071842F /* Frameworks */,
+				30CF1F1C28CFD96A0071842F /* Resources */,
+				C5B452A61BD4D4741A917E55 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NinjaOneProject;
+			productName = NinjaOneProject;
+			productReference = 30CF1F1E28CFD96A0071842F /* NinjaOneProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		30CF1F3328CFD96C0071842F /* NinjaOneProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30CF1F4B28CFD96C0071842F /* Build configuration list for PBXNativeTarget "NinjaOneProjectTests" */;
+			buildPhases = (
+				7B88EA3AFCC48F754CCCCCEC /* [CP] Check Pods Manifest.lock */,
+				30CF1F3028CFD96C0071842F /* Sources */,
+				30CF1F3128CFD96C0071842F /* Frameworks */,
+				30CF1F3228CFD96C0071842F /* Resources */,
+				EEF6824F8FF0B1C5F79C558E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30CF1F3628CFD96C0071842F /* PBXTargetDependency */,
+			);
+			name = NinjaOneProjectTests;
+			productName = NinjaOneProjectTests;
+			productReference = 30CF1F3428CFD96C0071842F /* NinjaOneProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30CF1F1628CFD96A0071842F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					30CF1F1D28CFD96A0071842F = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					30CF1F3328CFD96C0071842F = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 30CF1F1D28CFD96A0071842F;
+					};
+				};
+			};
+			buildConfigurationList = 30CF1F1928CFD96A0071842F /* Build configuration list for PBXProject "NinjaOneProject" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 30CF1F1528CFD96A0071842F;
+			productRefGroup = 30CF1F1F28CFD96A0071842F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30CF1F1D28CFD96A0071842F /* NinjaOneProject */,
+				30CF1F3328CFD96C0071842F /* NinjaOneProjectTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30CF1F1C28CFD96A0071842F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30CF1F2E28CFD96C0071842F /* LaunchScreen.storyboard in Resources */,
+				30CF1F6528CFDB8D0071842F /* Localizable.strings in Resources */,
+				A48A22812B502A6F00980216 /* README.md in Resources */,
+				30CF1F2B28CFD96C0071842F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30CF1F3228CFD96C0071842F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7B88EA3AFCC48F754CCCCCEC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NinjaOneProjectTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD6856B4E27A5994187ECD75 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NinjaOneProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5B452A61BD4D4741A917E55 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NinjaOneProject/Pods-NinjaOneProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NinjaOneProject/Pods-NinjaOneProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NinjaOneProject/Pods-NinjaOneProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEF6824F8FF0B1C5F79C558E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NinjaOneProjectTests/Pods-NinjaOneProjectTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NinjaOneProjectTests/Pods-NinjaOneProjectTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NinjaOneProjectTests/Pods-NinjaOneProjectTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30CF1F1A28CFD96A0071842F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30CF1F7928CFDC7D0071842F /* NetworkRepository.swift in Sources */,
+				30CF1F7528CFDC5C0071842F /* Bindable.swift in Sources */,
+				30BCB92628D0A4470053A7B8 /* CategoryItemsViewController.swift in Sources */,
+				30CF1F2628CFD96A0071842F /* HomeViewController.swift in Sources */,
+				30CF1F7028CFDC2A0071842F /* HomeViewModel.swift in Sources */,
+				30CF1F6328CFDB6E0071842F /* Localizable.swift in Sources */,
+				30CF1F8728CFF1A70071842F /* CategoryCell.swift in Sources */,
+				30CF1F2228CFD96A0071842F /* AppDelegate.swift in Sources */,
+				30BCB92C28D107C60053A7B8 /* ItemDetailCell.swift in Sources */,
+				30CF1F8228CFE4580071842F /* FeedViewController.swift in Sources */,
+				30CF1F5F28CFDB420071842F /* UIViewController+Extensions.swift in Sources */,
+				30BCB92A28D0FB940053A7B8 /* DetailItemViewController.swift in Sources */,
+				30CF1F7C28CFDD410071842F /* NinjaModel.swift in Sources */,
+				30CF1F7728CFDC6C0071842F /* Coordinator.swift in Sources */,
+				30CF1F5D28CFDB1C0071842F /* AppConfigurations.swift in Sources */,
+				30CF1F6E28CFDC040071842F /* HomeCoordinator.swift in Sources */,
+				30CF1F7E28CFDE550071842F /* NInjaEndPoint.swift in Sources */,
+				30CFC24328D294E300E420A0 /* CreaturesListViewController.swift in Sources */,
+				30CF1F6128CFDB510071842F /* String+Extensions.swift in Sources */,
+				30CF1F5B28CFDB130071842F /* AppMainCoordinator.swift in Sources */,
+				30CF1F8428CFE5130071842F /* UIVIew+Extensions.swift in Sources */,
+				30CF1F8028CFDE8D0071842F /* NinjaRepository.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30CF1F3028CFD96C0071842F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30CFC23F28D26CC200E420A0 /* NinjaRepositoryMockFailure.swift in Sources */,
+				30CFC23D28D26CB800E420A0 /* NinjaRepositoryMockSuccess.swift in Sources */,
+				30CF1F3928CFD96C0071842F /* NinjaOneProjectTests.swift in Sources */,
+				30CFC24128D26CD400E420A0 /* HomeViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		30CF1F3628CFD96C0071842F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30CF1F1D28CFD96A0071842F /* NinjaOneProject */;
+			targetProxy = 30CF1F3528CFD96C0071842F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		30CF1F2C28CFD96C0071842F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30CF1F2D28CFD96C0071842F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		30CF1F4628CFD96C0071842F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				API_BASE_URL = "https://botw-compendium.herokuapp.com/";
+				API_KEY = "";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IMAGE_URL = "https://openweathermap.org/img/wn/%@@2x.png";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		30CF1F4728CFD96C0071842F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				API_BASE_URL = "https://botw-compendium.herokuapp.com/";
+				API_KEY = "";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IMAGE_URL = "https://openweathermap.org/img/wn/%@@2x.png";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		30CF1F4928CFD96C0071842F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E941CC19144D4A949C38460E /* Pods-NinjaOneProject.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NinjaOneProject/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ninjaone.NinjaOneProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		30CF1F4A28CFD96C0071842F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94E8B3BA5AD825CC878B3AE4 /* Pods-NinjaOneProject.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NinjaOneProject/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ninjaone.NinjaOneProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		30CF1F4C28CFD96C0071842F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9B3A541E0191C99FA00FE55 /* Pods-NinjaOneProjectTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3GN5WJ7SZD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.renatomateusx.NinjaOneProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NinjaOneProject.app/NinjaOneProject";
+			};
+			name = Debug;
+		};
+		30CF1F4D28CFD96C0071842F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC83825F6F509FA3D4E52BEF /* Pods-NinjaOneProjectTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3GN5WJ7SZD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.renatomateusx.NinjaOneProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NinjaOneProject.app/NinjaOneProject";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30CF1F1928CFD96A0071842F /* Build configuration list for PBXProject "NinjaOneProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30CF1F4628CFD96C0071842F /* Debug */,
+				30CF1F4728CFD96C0071842F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30CF1F4828CFD96C0071842F /* Build configuration list for PBXNativeTarget "NinjaOneProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30CF1F4928CFD96C0071842F /* Debug */,
+				30CF1F4A28CFD96C0071842F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30CF1F4B28CFD96C0071842F /* Build configuration list for PBXNativeTarget "NinjaOneProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30CF1F4C28CFD96C0071842F /* Debug */,
+				30CF1F4D28CFD96C0071842F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 30CF1F1628CFD96A0071842F /* Project object */;
+}

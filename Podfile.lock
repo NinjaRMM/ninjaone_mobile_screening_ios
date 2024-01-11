@@ -1,0 +1,26 @@
+PODS:
+  - Kingfisher (7.10.1)
+  - SDWebImage (5.18.10):
+    - SDWebImage/Core (= 5.18.10)
+  - SDWebImage/Core (5.18.10)
+  - SnapshotTesting (1.8.2)
+
+DEPENDENCIES:
+  - Kingfisher
+  - SDWebImage
+  - SnapshotTesting (~> 1.8.1)
+
+SPEC REPOS:
+  trunk:
+    - Kingfisher
+    - SDWebImage
+    - SnapshotTesting
+
+SPEC CHECKSUMS:
+  Kingfisher: bc5abe80a8e0144537ef1dd5a0b2621b04f7f439
+  SDWebImage: fc8f2d48bbfd72ef39d70e981bd24a3f3be53fec
+  SnapshotTesting: 38947050d13960d57a4a9c166fcf51bca7d56970
+
+PODFILE CHECKSUM: dbb746dd7a95327acfdd62e4211a293ccea6b651
+
+COCOAPODS: 1.14.3
