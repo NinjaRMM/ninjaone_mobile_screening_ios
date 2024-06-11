@@ -28,7 +28,8 @@ In the ErrorsValidationTask folder, you will see a view that allows the user to 
 - Use async / await and core networking, no frameworks like AlamoFire.
 
 #### Custom: ####
-In the CustomTask folder, write and design a custom feature.
+In the CustomTask folder, write and design a view that shows an alert banner for different messages. Have it animate in/out. Update the appearance for different types of alerts.
 - Use SwiftUI.
-- Build a view model and show some data your choice (Bonus for using a public API).
-- Display the data as you choose.
+- Use any libraries/frameworks you like. Add them as dependancies under SPM.
+- Populate the view model with properties that will be displayed.
+- Bonus for consuming an API, customizing the UI or adding proper formatted code documentation.
