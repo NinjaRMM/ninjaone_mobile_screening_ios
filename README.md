@@ -1,11 +1,11 @@
 # README #
 
-Welcome to the NinjaOne candidate application. There are 5 tasks that need to be completed. Each task has its own folder and contains a view and view model. Each task is isolated to it's own folder.
+Welcome to the NinjaOne candidate application. There are 5 tasks that need to be completed. Each task has its own folder and contains a view and view model. Each task is isolated to its own folder.
 
 # Tasks: #
 
 #### Debug: ####
-In the DebugTask folder, There are several functions that have bugs.
+In the DebugTask folder, there are several functions that have bugs.
 - Test each function with different sample data sets and fix the potential issues.
 - Display the results in the view.
 

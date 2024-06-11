@@ -59,8 +59,6 @@ class DebugViewModel: ObservableObject {
         let number2 = 5
         
         let result = addNumbers(number1, number2)
-        
-        print("Result: \(result)")
     }
     
     // Utility function
